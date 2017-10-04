@@ -1,0 +1,80 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		8E07F0C71F84954300CC2235 /* Node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		8E07F0C81F84954300CC2235 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		8E07F0C91F849EB700CC2235 /* Djikstra.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Djikstra.cpp; sourceTree = "<group>"; };
+		8E07F0CA1F849EB700CC2235 /* Djikstra.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Djikstra.hpp; sourceTree = "<group>"; };
+		8EE9E04C1F84C0440022973B /* TestDjikstra.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestDjikstra.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		8E07F0C01F8494A800CC2235 = {
+			isa = PBXGroup;
+			children = (
+				8E07F0C81F84954300CC2235 /* Node.hpp */,
+				8E07F0CA1F849EB700CC2235 /* Djikstra.hpp */,
+				8E07F0C71F84954300CC2235 /* Node.cpp */,
+				8E07F0C91F849EB700CC2235 /* Djikstra.cpp */,
+				8EE9E04C1F84C0440022973B /* TestDjikstra.cpp */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		8E07F0C11F8494A800CC2235 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+			};
+			buildConfigurationList = 8E07F0C41F8494A800CC2235 /* Build configuration list for PBXProject "Djikstra_Algorithm_C++" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E07F0C01F8494A800CC2235;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		8E07F0C51F8494A800CC2235 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		8E07F0C61F8494A800CC2235 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E07F0C41F8494A800CC2235 /* Build configuration list for PBXProject "Djikstra_Algorithm_C++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E07F0C51F8494A800CC2235 /* Debug */,
+				8E07F0C61F8494A800CC2235 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E07F0C11F8494A800CC2235 /* Project object */;
+}
