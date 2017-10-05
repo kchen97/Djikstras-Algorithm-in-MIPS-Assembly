@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8EE9E05A1F8559BF0022973B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EE9E0591F8559BF0022973B /* main.cpp */; };
+		8EE9E0651F855A0E0022973B /* Djikstra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EE9E0601F855A0E0022973B /* Djikstra.cpp */; };
+		8EE9E0661F855A0E0022973B /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EE9E0621F855A0E0022973B /* Node.cpp */; };
+		8EE9E0671F855A0E0022973B /* TestDjikstra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EE9E0641F855A0E0022973B /* TestDjikstra.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,11 @@
 
 /* Begin PBXFileReference section */
 		8EE9E0561F8559BF0022973B /* Djikstra */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Djikstra; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EE9E0591F8559BF0022973B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8EE9E0601F855A0E0022973B /* Djikstra.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Djikstra.cpp; sourceTree = "<group>"; };
+		8EE9E0611F855A0E0022973B /* Djikstra.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Djikstra.hpp; sourceTree = "<group>"; };
+		8EE9E0621F855A0E0022973B /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		8EE9E0631F855A0E0022973B /* Node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		8EE9E0641F855A0E0022973B /* TestDjikstra.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestDjikstra.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,11 @@
 		8EE9E0581F8559BF0022973B /* Djikstra */ = {
 			isa = PBXGroup;
 			children = (
-				8EE9E0591F8559BF0022973B /* main.cpp */,
+				8EE9E0601F855A0E0022973B /* Djikstra.cpp */,
+				8EE9E0611F855A0E0022973B /* Djikstra.hpp */,
+				8EE9E0621F855A0E0022973B /* Node.cpp */,
+				8EE9E0631F855A0E0022973B /* Node.hpp */,
+				8EE9E0641F855A0E0022973B /* TestDjikstra.cpp */,
 			);
 			path = Djikstra;
 			sourceTree = "<group>";
@@ -119,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EE9E05A1F8559BF0022973B /* main.cpp in Sources */,
+				8EE9E0661F855A0E0022973B /* Node.cpp in Sources */,
+				8EE9E0671F855A0E0022973B /* TestDjikstra.cpp in Sources */,
+				8EE9E0651F855A0E0022973B /* Djikstra.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +260,7 @@
 				8EE9E05F1F8559BF0022973B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

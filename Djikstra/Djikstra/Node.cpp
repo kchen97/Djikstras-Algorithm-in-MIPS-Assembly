@@ -11,19 +11,17 @@
 #include <iostream>
 using namespace std;
 
-Node::Node(int v, int children)
+Node::Node()
 {
-    vertex = v;
-    visited = false;
-    costToChildren.resize(children, 32000);
+    visited = false; // A vertex is always initially unvisited
 }
 
 void Node::visit()
 {
-    visited = !visited;
+    visited = !visited; // Mark as visited
 }
 
 void Node::setCost(int v, int cost)
 {
-    costToChildren[v] = cost;
+    costToChildren[v] = cost; // Set cost from this vertex to another vertex 'v'
 }

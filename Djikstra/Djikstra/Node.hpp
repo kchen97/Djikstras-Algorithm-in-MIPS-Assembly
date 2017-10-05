@@ -16,12 +16,11 @@ using namespace std;
 
 class Node
 {
-private:
-    int vertex;
 public:
     bool visited;
     vector<int> costToChildren;
-    Node(int, int);
+    Node();
+    Node(int);
     void visit();
     void setCost(int, int);
 };

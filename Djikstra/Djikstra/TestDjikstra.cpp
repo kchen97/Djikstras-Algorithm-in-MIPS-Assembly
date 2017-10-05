@@ -15,14 +15,39 @@ using namespace std;
 
 int main()
 {
-    int startingVertex = 3, maxNodes;
-    vector<Node> vertices;
+    int startingVertex, maxNodes;
+    vector<Node> graph;
     
     cout << "How many nodes are there?" << endl;
     cin >> maxNodes;
-    vertices.resize(maxNodes);
+    graph.resize(maxNodes);
     
-    while()
+    for(int i = 0; i < graph.size(); i++)
+    {
+        graph[i].costToChildren.resize(maxNodes, 32000);
+    }
+    
+    for(int i = 0; i < graph.size(); i++)
+    {
+        for(int j = 0; j < graph.size(); j++)
+        {
+            int cost;
+            if(j != i && graph[i].costToChildren[j] == 32000)
+            {
+                cout << "Enter cost from vertex " << i << " to vertex " << j << ": \n";
+                cin >> cost;
+                graph[i].setCost(j, cost);
+                graph[j].setCost(i, cost);
+            }
+        }
+    }
+    
+    cout << "Enter a starting vertex: " << endl;
+    cin >> startingVertex;
+    
+    Djikstra shortPaths(maxNodes);
+    shortPaths.compute(graph, startingVertex);
+    
     
     return 0;
 }

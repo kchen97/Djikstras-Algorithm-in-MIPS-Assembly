@@ -23,6 +23,7 @@ public:
     Djikstra(int);
     void compute(vector<Node> &, int);
     int getNextVertex(int, vector<Node> &);
+    void showShortestPaths();
 };
 
 #endif /* Djikstra_hpp */
