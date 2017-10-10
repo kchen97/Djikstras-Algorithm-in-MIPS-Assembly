@@ -26,7 +26,7 @@
 
 /* Begin PBXFileReference section */
 		8EE9E0561F8559BF0022973B /* Djikstra */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Djikstra; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EE9E0601F855A0E0022973B /* Djikstra.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Djikstra.cpp; sourceTree = "<group>"; };
+		8EE9E0601F855A0E0022973B /* Djikstra.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = Djikstra.cpp; sourceTree = "<group>"; usesTabs = 0; wrapsLines = 1; };
 		8EE9E0611F855A0E0022973B /* Djikstra.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Djikstra.hpp; sourceTree = "<group>"; };
 		8EE9E0621F855A0E0022973B /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
 		8EE9E0631F855A0E0022973B /* Node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };

@@ -15,19 +15,45 @@ using namespace std;
 
 int main()
 {
-    int startingVertex, maxNodes;
+    int startingVertex, maxNodes, i, j;
     vector<Node> graph;
     
     cout << "How many nodes are there?" << endl;
     cin >> maxNodes;
     graph.resize(maxNodes);
     
-    for(int i = 0; i < graph.size(); i++)
-    {
+    i = 0;
+resizeLoop:
+    if(i >= graph.size()) goto doneResizing; {
         graph[i].costToChildren.resize(maxNodes, 32000);
+        i++;
+        goto resizeLoop;
     }
+doneResizing:
     
-    for(int i = 0; i < graph.size(); i++)
+    i = 0;
+iLoop:
+    if(i >= graph.size()) goto doneInitializingCosts; {
+        j = 0;
+    jLoop:
+        if(j >= graph.size()) goto exitCurrentVert; {
+            int cost;
+            if(j != i && graph[i].costToChildren[j] == 32000) {
+                cout << "Enter cost from vertex " << i << " to vertex " << j << ": \n";
+                cin >> cost;
+                graph[i].setCost(j, cost);
+                graph[j].setCost(i, cost);
+            }
+            j++;
+            goto jLoop;
+        }
+    exitCurrentVert:
+        i++;
+        goto iLoop;
+    }
+doneInitializingCosts:
+    
+    /*for(int i = 0; i < graph.size(); i++)
     {
         for(int j = 0; j < graph.size(); j++)
         {
@@ -40,7 +66,7 @@ int main()
                 graph[j].setCost(i, cost);
             }
         }
-    }
+    }*/
     
     cout << "Enter a starting vertex: " << endl;
     cin >> startingVertex;
